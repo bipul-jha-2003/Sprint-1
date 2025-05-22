@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    gap: 100px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    margin: 10px;
+}

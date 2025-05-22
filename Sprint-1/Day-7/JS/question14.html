@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .transform-box {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #3498db, #9b59b6);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        /* Rotate on hover */
+        .rotate:hover {
+            transform: rotate(15deg);
+        }
+
+        /* Scale on hover */
+        .scale:hover {
+            transform: scale(1.2);
+        }
+
+        /* Translate on hover */
+        .translate:hover {
+            transform: translateY(-20px);
+        }
+
+        /* Combined transforms */
+        .combined:hover {
+            transform: rotate(10deg) scale(1.1) translateX(15px);
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Transform Effects</h1>
+
+    <div class="transform-box rotate">
+        Hover to Rotate
+    </div>
+
+    <div class="transform-box scale">
+        Hover to Scale
+    </div>
+
+    <div class="transform-box translate">
+        Hover to Move Up
+    </div>
+
+    <div class="transform-box combined">
+        Combined Effects
+    </div>
+</body>
+
+</html>
